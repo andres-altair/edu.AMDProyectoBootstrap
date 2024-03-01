@@ -1,94 +1,153 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Barra de Navegación con Bootstrap</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <style>
-    .placeholder {
-      background-color: #ddd;
-      height: 200px; /* Altura de los placeholders */
-    }
-  </style>
+<meta charset="UTF-8">
+<title>inicio</title>
+ <link rel="stylesheet" href="NewFile.css">
+<meta name="author" content="inicio Web" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Logo</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+<nav class="navbar navbar-expand-lg  navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand text-primary" href="#"><img src="foto/NEO.jpg" class="card-img-top tras" alt="..."></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarTogglerDemo02" >
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="carritoDeCompra.html"><i class="bi bi-cart-check-fill"></i></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="informacion.html">Informacion</a>
+  </li>
+     <li class="nav-item">
+    <a class="nav-link" href="inversion.html">Inversion</a>
+  </li>
+
+  <li class="nav-item">
+   <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Menu desplegable
   </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-      </li>
-    </ul>
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Enlace 1</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Enlace 2</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Submenu
-        </a>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Opción 1</a>
-          <a class="dropdown-item" href="#">Opción 2</a>
-          <a class="dropdown-item" href="#">Opción 3</a>
-        </div>
-      </li>
-    </ul>
-    <a class="navbar-brand" href="#">Icono</a>
-  </div>
-</nav>
-
-<div class="container mt-4">
-  <div class="row">
-    <div class="col-md-12">
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="foto/sp500.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="fotos/etf.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="fotos/bitcoin.jpg" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Siguiente</span>
-        </a>
-      </div>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">carrito</a></li>
+    <li><a class="dropdown-item" href="#">inversion</a></li>
+    <li><a class="dropdown-item" href="#">informacion</a></li>
+  </ul>
+</div>
+  </li>
+  
+</ul>
+     
     </div>
   </div>
+</nav>
+<br>
+ <!-- Carrusel -->
+ <div class="container mt-5"></div>
+   <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="3000">
+      <img src="foto/sp500.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+   
+      <img src="foto/etf.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <img src="foto/bitcoin.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
-
+   
+<!--placeholder-->
 <div class="container mt-4">
   <div class="row d-md-flex justify-content-between">
     <div class="col-md-4 mb-4 mb-md-0">
-      <div class="placeholder"></div>
+      <div class="card">
+  <img src="foto/inverlargo.jpg" class="card-img-top" alt="...">
+
+  <div class="card-body">
+    <h5 class="card-title">Inversion largo plazo</h5>
+    <p class="card-text"> Son todas aquellas operaciones de inversión pensadas para mantenerse durante un año o más. A diferencia 
+		del enfoque a corto plazo, donde los inversores buscan ganancias rápidas, la inversión a largo plazo 
+		se centra en acumular riqueza gradualmente a lo largo del tiempo.</p>
+    <a href="#" class="btn btn-primary">Inversiones</a>
+  </div>
+</div>
+
+
     </div>
     <div class="col-md-4 mb-4 mb-md-0">
-      <div class="placeholder"></div>
+      <div class="card">
+  <img src="foto/invermedio.jpg" class="card-img-top" alt="...">
+
+  <div class="card-body">
+    <h5 class="card-title">Inversion a medio plazo</h5>
+    <p class="card-text">Las inversiones a medio plazo son aquellas cuyo horizonte temporal no superará los 5 años. 
+		Este tipo de inversión busca no tanto la liquidez, sino una mayor exposición a activos de mayor riesgo que
+		 tengan más potencial de revalorización (aunque generalmente huyen de activos extremadamente volátiles).</p>
+    <a href="#" class="btn btn-primary">Inversiones</a>
+  </div>
+</div>
+
+
     </div>
     <div class="col-md-4 mb-4 mb-md-0">
-      <div class="placeholder"></div>
+      <div class="card">
+  <img src="foto/invercorto.jpg" class="card-img-top" alt="...">
+
+  <div class="card-body">
+    <h5 class="card-title">Inversion a corto plazo</h5>
+    <p class="card-text">Invertir a corto plazo se refiere a aquellas inversiones financieras que se mantienen en un periodo que
+		 puede estar comprendido desde un día hasta un año y que se pueden convertir fácilmente en efectivo, es decir tienen
+		  mayor liquidez para que dispongas de tu dinero.</p>
+    <a href="#" class="btn btn-primary">Inversiones</a>
+  </div>
+</div>
+
+
     </div>
   </div>
 </div>
+
+
+<!--formulario-->
+
+<div class="container mt-5">
+    <h2 class="mb-4">Formulario de Contacto</h2>
+    <form action="enviar.php" method="post">
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</div>
+<!--footer-->
 
   <footer class="bg-dark text-white mt-5">
   <div class="container">
@@ -98,17 +157,15 @@
         <p>Teléfono: +1 234 567 890</p>
         <p>Correo: info@example.com</p>
       </div>
-      
+     
       <div class="col-md-4">
-        <p>&copy; 2024 Mi Empresa. Todos los derechos reservados.</p>
+        <p>&copy; 2024 NEO. Todos los derechos reservados.</p>
       </div>
     </div>
   </div>
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
 </html>

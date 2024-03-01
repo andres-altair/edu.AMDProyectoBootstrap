@@ -1,67 +1,64 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Barra de Navegación con Bootstrap</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <style>
-    .placeholder {
-      background-color: #ddd;
-      height: 200px; /* Altura de los placeholders */
-    }
-  </style>
+<meta charset="UTF-8">
+<title>informacion</title>
+ <link rel="stylesheet" href="NewFile.css">
+<meta name="author" content="informacion Web" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-
-<nav class="navbar navbar-expand-lg navbar-light bg-primary">
-  <a class="navbar-brand" href="#">Logo</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+<!-- navegacion-->
+<nav class="navbar navbar-expand-lg  navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand text-primary" href="#"><img src="foto/NEO.jpg" class="card-img-top tras" alt="..."></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarTogglerDemo02" >
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="carritoDeCompra.html"><i class="bi bi-cart-check-fill"></i></a>
+  </li>
+  <li class="nav-item">
+  	 <a class="nav-link active" aria-current="page" href="index.html"><i class="bi bi-arrow-bar-left"></i></a>
+  </li>
+  <li class="nav-item">
+   <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Menu desplegable
   </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-      </li>
-    </ul>
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Enlace 1</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Enlace 2</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Submenu
-        </a>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Opción 1</a>
-          <a class="dropdown-item" href="#">Opción 2</a>
-          <a class="dropdown-item" href="#">Opción 3</a>
-        </div>
-      </li>
-    </ul>
-    <a class="navbar-brand" href="#">Icono</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">inicio</a></li>
+    <li><a class="dropdown-item" href="#">carrito</a></li>
+    <li><a class="dropdown-item" href="#">inversion</a></li>
+  </ul>
+</div>
+  </li>
+  
+</ul>
+     
+    </div>
   </div>
 </nav>
 
-<div class="row">
+<!--barra vertical -->
+<br><br><br><br><br><br>
+ <div class="row">
   <div class="col-4">
     <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
       <nav class="nav nav-pills flex-column">
         <a class="nav-link" href="#item-1">¿Que se entiende por inversión?</a>
         <nav class="nav nav-pills flex-column">
-          <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
-          <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+          <a class="nav-link ms-3 my-1" href="#item-1-1">¿Cuándo se inventaron las inversiones?</a>
+          <a class="nav-link ms-3 my-1" href="#item-1-2">¿Qué tipo de inversión existen?</a>
         </nav>
-        <a class="nav-link" href="#item-2">Item 2</a>
-        <a class="nav-link" href="#item-3">Item 3</a>
+        <a class="nav-link" href="#item-2">¿Cuáles son las mejores inversiones a largo plazo?</a>
+        <a class="nav-link" href="#item-3">¿Cuáles son las inversiones a mediano plazo?</a>
         <nav class="nav nav-pills flex-column">
-          <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
-          <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+          <a class="nav-link ms-3 my-1" href="#item-3-1">¿Cuáles son los tipos de inversiones a corto plazo?</a>
+          <a class="nav-link ms-3 my-1" href="#item-3-2">¿Qué es y cómo funciona la criptomoneda?</a>
         </nav>
       </nav>
     </nav>
@@ -71,42 +68,63 @@
     <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
       <div id="item-1">
         <h4>¿Que se entiende por inversión?</h4>
-        <p>La inversión es el acto de asignar recursos para la compra o creación de activos o de capital, es decir el acto de no consumir esos recursos ahora para satisfacer necesidades en el presente, sino de destinarlos a satisfacer necesidades en el futuro.</p>
+        <p>La inversión es el acto de asignar recursos para la compra o creación de activos o de capital, es decir el acto de no consumir esos 
+			recursos ahora para satisfacer necesidades en el presente, sino de destinarlos a satisfacer necesidades en el futuro.</p>
       </div>
       <div id="item-1-1">
-        <h4>¿Cuándo se inventaron las inversiones?</h5>
-        <p>En 1774, un rico comerciante holandés, Adriaan Van Ketwich, creo un fideicomiso, un contrato en virtud del que una o más personas transmiten bienes, dinero o derechos de su propiedad a otra persona para que los administre o invierta.</p>
+        <h4>¿Cuándo se inventaron las inversiones?</h4>
+        <p>En 1774, un rico comerciante holandés, Adriaan Van Ketwich, creo un fideicomiso, un contrato en virtud del que una o más personas 
+			transmiten bienes, dinero o derechos de su propiedad a otra persona para que los administre o invierta.</p>
       </div>
       <div id="item-1-2">
-        <h4>¿Qué tipo de inversión existen?</h5>
-        <p>Acciones: Son una forma de invertir en una empresa, lo que permite al inversor obtener una participación en la propiedad y los beneficios de la empresa.
-Bonos: Constituyen una forma de inversión de renta fija en la que el inversor presta dinero a una entidad gubernamental o corporativa a cambio de intereses y el reembolso del capital prestado en una fecha determinada.
-Fondos mutuos: En este caso, un grupo de inversores se unen para invertir en una cartera diversificada de acciones, bonos u otros instrumentos financieros.
-Bienes raíces: Esta modalidad incluye la compra de propiedades con la intención de alquilarlas o revenderlas para obtener beneficios.
-Materias primas: Implica la compra de productos básicos como el petróleo, el maíz o metales, como el oro, con la esperanza de que su valor aumente.
-Forex: El mercado de divisas o Forex es una forma de inversión en la que se compran y venden diferentes monedas internacionales con el objetivo de obtener beneficios a través de las fluctuaciones de los tipos de cambio.
-Criptomonedas: Suponen una forma relativamente nueva de inversión que ha revolucionado a las finanzas en los últimos años. Involucra la compra de monedas digitales con la esperanza de que su valor aumente con el tiempo.
-</p>
+        <h4>¿Qué tipo de inversión existen?</h4>
+        <p>Acciones: Son una forma de invertir en una empresa, lo que permite al inversor obtener una participación en la propiedad y los 
+			beneficios de la empresa.Bonos: Constituyen una forma de inversión de renta fija en la que el inversor presta dinero a una 
+			entidad gubernamental o corporativa a cambio de intereses y el reembolso del capital prestado en una fecha determinada.
+			Fondos mutuos: En este caso, un grupo de inversores se unen para invertir en una cartera diversificada de acciones, bonos u otros 
+			instrumentos financieros.
+			Bienes raíces: Esta modalidad incluye la compra de propiedades con la intención de alquilarlas o revenderlas para obtener beneficios.
+			Materias primas: Implica la compra de productos básicos como el petróleo, el maíz o metales, como el oro, con la esperanza de que su 
+			valor aumente.Forex: El mercado de divisas o Forex es una forma de inversión en la que se compran y venden diferentes monedas 
+			internacionales con el objetivo de obtener beneficios a través de las fluctuaciones de los tipos de cambio.
+			Criptomonedas: Suponen una forma relativamente nueva de inversión que ha revolucionado a las finanzas en los últimos años. Involucra
+			 la compra de monedas digitales con la esperanza de que su valor aumente con el tiempo.
+		</p>
       </div>
       <div id="item-2">
-        <h4>Item 2</h4>
-        <p>...</p>
+        <h4>¿Cuáles son las mejores inversiones a largo plazo? 2</h4>
+        <p>Acciones (renta variable). Son las participaciones de empresas que cotizan en los mercados financieros.
+			Bonos Soberanos (renta fija). Títulos de deuda emitidos por los Gobiernos.
+			Bonos Corporativos (renta fija). Títulos de deuda, pero emitidos por empresas
+ 			Futuros de materias primas o ‘commodities’. Productos como el petróleo, cereales o metales preciosos (oro y plata) cotizan en los mercados.
+			Divisas. Se pueden comprar y vender a precios que cambian de manera constante.
+			Fondos de Inversión: un patrimonio constituido con las aportaciones de muchos inversores (partícipes), representado y administrado por una sociedad gestora.
+			ETF: Exchange Traded Funds, es un fondo de inversión que tiene la misión de replicar la evolución de un índice o de una cesta de valores.
+		</p>
       </div>
       <div id="item-3">
-        <h4>Item 3</h4>
-        <p>...</p>
+        <h4>¿Cuáles son las inversiones a mediano plazo?</h4>
+        <p>Variedad de opciones de inversión: Las inversiones a medio plazo pueden tomar distintas formas, como bonos corporativos y gubernamentales, acciones de empresas
+			 con potencial de crecimiento en el plazo previsto, o fondos de inversión mixtos que combinen renta fija y renta variable.
+		</p>
       </div>
       <div id="item-3-1">
-        <h5>Item 3-1</h5>
-        <p>...</p>
+        <h4>¿Cuáles son los tipos de inversiones a corto plazo?</h4>
+        <p>Depósitos o cuentas remuneradas.
+		Letras del Tesoro.
+		Los fondos de inversión.
+		Las acciones bursátiles.</p>
       </div>
       <div id="item-3-2">
-        <h5>Item 3-2</h5>
-        <p>...</p>
+        <h5>¿Qué es y cómo funciona la criptomoneda?</h5>
+        <p>Una criptomoneda es un activo digital que emplea un cifrado criptográfico para garantizar su titularidad y asegurar la integridad de las transacciones,
+		 y controlar la creación de unidades adicionales, es decir, evitar que alguien pueda hacer copias como haríamos, por ejemplo, con una foto.
+		 </p>
       </div>
     </div>
   </div>
 </div>
+<!--footer-->
 
   <footer class="bg-dark text-white mt-5">
   <div class="container">
@@ -116,17 +134,15 @@ Criptomonedas: Suponen una forma relativamente nueva de inversión que ha revolu
         <p>Teléfono: +1 234 567 890</p>
         <p>Correo: info@example.com</p>
       </div>
-      
+     
       <div class="col-md-4">
-        <p>&copy; 2024 Mi Empresa. Todos los derechos reservados.</p>
+        <p>&copy; 2024 NEO. Todos los derechos reservados.</p>
       </div>
     </div>
   </div>
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
 </html>
